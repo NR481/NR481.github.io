@@ -2101,6 +2101,7 @@ input, select, textarea {
 		.image img {
 			border-radius: 0.35em;
 			display: block;
+			/* object-fit: cover; */
 		}
 
 		.image.left {
@@ -2556,6 +2557,9 @@ input, select, textarea {
 
 	.work-item {
 		margin: 0 0 2em 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 	}
 
 		.work-item .image {
@@ -2563,14 +2567,24 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
+			font-size: 20px;
 			margin: 0 0 0.5em 0;
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 13px;
 			line-height: 1.5em;
-			margin: 0;
+		}
+
+		.site-links {
+			display: flex;
+			justify-content: space-evenly;
+			width: 100%;
+			margin-left: -40px;
+		}
+
+		.site-links > a {
+			color: gray;
 		}
 
 /* Header */
